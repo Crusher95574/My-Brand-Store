@@ -15,7 +15,7 @@ const CATEGORIES = [
 const HomePage = () => {
   const [featured, setFeatured] = useState([]);
   const [loading,  setLoading]  = useState(true);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const fetchFeatured = async () => {

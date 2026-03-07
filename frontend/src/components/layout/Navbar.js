@@ -5,7 +5,7 @@ import { useAuth } from "../../context/AuthContext";
 
 const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [menuOpen,   setMenuOpen]   = useState(false);
+  // const [menuOpen,   setMenuOpen]   = useState(false);
   const { cartCount }  = useCart();
   const { user, logout } = useAuth();
   const navigate = useNavigate();

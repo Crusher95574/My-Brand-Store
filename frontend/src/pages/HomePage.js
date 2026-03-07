@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { productAPI } from "../services/api";
 import ProductCard from "../components/common/ProductCard";
 
@@ -15,7 +15,6 @@ const CATEGORIES = [
 const HomePage = () => {
   const [featured, setFeatured] = useState([]);
   const [loading,  setLoading]  = useState(true);
-  // const navigate = useNavigate();
 
   useEffect(() => {
     const fetchFeatured = async () => {

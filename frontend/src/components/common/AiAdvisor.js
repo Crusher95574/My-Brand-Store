@@ -84,7 +84,7 @@ const AiAdvisor = () => {
               <span className="ai-online-dot" />
               <strong>Style Advisor AI</strong>
             </div>
-            <span className="ai-powered-by">Powered by Claude</span>
+            <span className="ai-powered-by">Powered by Gemini</span>
           </div>
 
           {/* Messages */}

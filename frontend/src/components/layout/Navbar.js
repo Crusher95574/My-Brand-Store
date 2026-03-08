@@ -6,7 +6,7 @@ import { useAuth } from "../../context/AuthContext";
 const Navbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   // const [menuOpen,   setMenuOpen]   = useState(false);
-  const { cartCount }  = useCart();
+  const { cartCount } = useCart();
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
@@ -45,12 +45,15 @@ const Navbar = () => {
           {user ? (
             <>
               <Link to="/orders" className="nav-link">Orders</Link>
+              {user.role === "admin" && (
+                <Link to="/admin" className="nav-link">Admin</Link>
+              )}
               <span className="nav-link nav-user">Hi, {user.name.split(" ")[0]}</span>
               <button className="nav-btn-text" onClick={logout}>Logout</button>
             </>
           ) : (
             <>
-              <Link to="/login"    className="nav-link">Login</Link>
+              <Link to="/login" className="nav-link">Login</Link>
               <Link to="/register" className="nav-btn-primary">Join</Link>
             </>
           )}

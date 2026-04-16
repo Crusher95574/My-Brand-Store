@@ -145,7 +145,7 @@ npm run dev
 **Test Accounts:**
 | User | Email | Password | Role |
 |------|-------|----------|------|
-| Admin | admin@mybrandstore.com | admin123456 | Admin |
+| Admin | admin@mybrandstore.com | admin12345 | Admin |
 | Customer | customer@example.com | password123 | Customer |
 
 ---
